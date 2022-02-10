@@ -18,8 +18,35 @@ conda info
 ```shell
 conda deactivate
 ```
-### Creating user
-Setting the user credentials using flask fab
+### Creating user and running the webserver
+1(a). Setting the user credentials using `flask fab`, 
+follow the instructions on the command line
 ```shell
 FLASK_APP=airflow.www.app flask fab create-admin
 ```
+1(b). Creating user using airflow's `create users command`
+```shell
+airflow users create 
+--username admin 
+--password your_password 
+--firstname your_first_name 
+--lastname your_last_name 
+--role Admin 
+--email your_email@some.com
+```
+2. Run the below command to confirm if the user is created
+```shell
+airflow users list
+```
+3. Initialise airflow database
+```shell
+airflow db init
+```
+4. Starting the airflow webserver 
+```shell
+airflow webserver
+```
+
+
+### References
+- https://insaid.medium.com/setting-up-apache-airflow-in-macos-2b5e86eeaf1
