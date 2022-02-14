@@ -18,6 +18,8 @@ conda info
 ```shell
 conda deactivate
 ```
+## Airflow
+
 ### Creating user and running the webserver
 1(a). Setting the user credentials using `flask fab`, 
 follow the instructions on the command line
@@ -52,6 +54,7 @@ airflow webserver
 airflow schedular
 ```
 
+## Doit
 
 ### References
 - https://insaid.medium.com/setting-up-apache-airflow-in-macos-2b5e86eeaf1
