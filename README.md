@@ -42,9 +42,14 @@ airflow users list
 ```shell
 airflow db init
 ```
-4. Starting the airflow webserver 
+5. Setup mysql database and secure it using password - [macOS setup instructions](https://flaviocopes.com/mysql-how-to-install/)
+
+6. Make changes in the `airflow.cfg`
+
+7. Star the airflow webserver and schedular 
 ```shell
 airflow webserver
+airflow schedular
 ```
 
 
