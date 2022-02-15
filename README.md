@@ -55,6 +55,19 @@ airflow schedular
 ```
 
 ## Doit
+- [CLI commands](https://pydoit.org/cmd-run.html)
+- Doit looks for `dodo.py` but you can explicitly add -f flag for other file names 
+`doit -f <filrname.py>`
+- [doc](https://pydoit.org/tasks.html#doc) attribute to add better messaging for end-user 
+- [Defining tasks and dependency](https://pydoit.org/tasks.html#dependencies-targets) 
+```python
+def task_compile():
+return {'actions': ["cc -c main.c"],
+            'file_dep': ["main.c", "defs.h"],
+            'targets': ["main.o"],
+            'doc': 'nice message'
+            }
+```
 
 ### References
 - https://insaid.medium.com/setting-up-apache-airflow-in-macos-2b5e86eeaf1
