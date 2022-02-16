@@ -69,5 +69,8 @@ return {'actions': ["cc -c main.c"],
             }
 ```
 
+## Typer
+Command usage - python <filename.py> <agrs*>
+
 ### References
 - https://insaid.medium.com/setting-up-apache-airflow-in-macos-2b5e86eeaf1
