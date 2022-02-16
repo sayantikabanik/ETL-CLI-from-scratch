@@ -11,6 +11,6 @@ def task_create():
 
 
 def task_modify():
-    return {'actions': ["echo hmmm > output/foo.txt"],
-            'file_dep': ["output/foo.txt"],
+    return {'actions': ["echo testing_write > output/foo.txt"],
+            'file_dep': ["output/foo.txt"]
             }
