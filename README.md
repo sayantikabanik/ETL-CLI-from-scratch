@@ -1,5 +1,5 @@
-# ETL-from-scratch
-Demonstration of various OSS technologies to construct an ETL pipeline
+# ETL/CLI-from-scratch
+Demonstration of various OSS technologies to construct an ETL/CLI pipeline
 
 ### Dependency management using conda
 Steps to create environment 
