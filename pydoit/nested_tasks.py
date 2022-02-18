@@ -3,8 +3,9 @@ Simple demo for nested tasks
 (can be more complicated)
 
 The dependent files for each block of nested tasks, 
-could be same or a list of files
+could be list of file names
 
+NOTE:
 The 'name' param should be unique
 The method names should always start with "task_"
 """
