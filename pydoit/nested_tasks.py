@@ -2,8 +2,8 @@
 Simple demo for nested tasks
 (can be more complicated)
 
-The dependent files for one block of tasks, should be same
-or try passing multiple dependent files in loop
+The dependent files for each block of nested tasks, 
+could be same or a list of files
 
 The 'name' param should be unique
 The method names should always start with "task_"
